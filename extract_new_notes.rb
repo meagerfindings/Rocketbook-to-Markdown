@@ -86,7 +86,7 @@ end
 Dir.each_child(".") do |file|
   file_name = file.downcase
 
-  if file_name =~ PRAYER_PRAISE_REGEX || file_name =~ SERMON_REGEX ||file_name =~ MENS_GROUP_REGEX || file_name =~ BIBLE_STUDY_REGEX
+  if file_name =~ PRAYER_PRAISE_REGEX || file_name =~ SERMON_REGEX ||file_name =~ MENS_GROUP_REGEX || file_name =~ BIBLE_STUDY_REGEX || file_name =~ PERSONAL_BIBLE_STUDY_REGEX
     move_to_sermons(file)
   end
 
