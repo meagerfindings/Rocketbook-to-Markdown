@@ -7,7 +7,7 @@ PRAYER_PRAISE_REGEX = /^(prayer\sand\spraise).*(\.txt)\z/
 SERMON_REGEX = /^(sermon).*(\.txt)\z/
 MENS_GROUP_REGEX = /^(mens\sgroup).*(\.txt)\z/
 BIBLE_STUDY_REGEX = /^(bible\sstudy).*(\.txt)\z/
-BIBLE_STUDY_REGEX = /^(personal\sbible\sstudy).*(\.txt)\z/
+PERSONAL_BIBLE_STUDY_REGEX = /^(personal\sbible\sstudy).*(\.txt)\z/
 
 DO_NOT_MOVE_LIST = %w(.ruby-version extract_new_notes.rb .ds_store ./processed processed .idea README.md .plist .gitignore .git com.matgreten.rocketbooknotes.plist)
 
@@ -56,7 +56,7 @@ def move_to_sermons(input_file)
     name = "Men's Group"
   elsif input_file_name =~ BIBLE_STUDY_REGEX
     name = "Bible Study"
-  elsif input_file_name =~ _PERSONAL_BIBLE_STUDY_REGEX
+  elsif input_file_name =~ PERSONAL_BIBLE_STUDY_REGEX
     name = "Personal Bible Study"
   end
 
