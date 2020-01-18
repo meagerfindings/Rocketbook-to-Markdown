@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+
+    <key>Label</key>
+    <string>com.matgreten.rocketbooknotes</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StartInterval</key>
+    <integer>20</integer>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/matgreten/Google Drive/Rocketbook/stderr.log</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/matgreten/Google Drive/Rocketbook/stdout.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>RBENV_VERSION</key>
+      <string>2.6.3</string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/matgreten/Google Drive/Rocketbook/Rocketbook Gmail Scans</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Users/matgreten/.rbenv/shims/ruby</string>
+      <string>extract_new_notes.rb</string>
+    </array>
+  </dict>
+</plist>
